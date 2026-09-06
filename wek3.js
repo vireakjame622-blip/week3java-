@@ -127,18 +127,15 @@ const users = [
   { name: "Sovath", age: 19, isAdmin: false },
   { name: "Bora", age: 25, isAdmin: true },
 ];
-// Step 1: Filter admins using a simple regular function
 function checkIsAdmin(user) {
   return user.isAdmin === true;
 }
 const admins = users.filter(checkIsAdmin);
 console.log("Admins:", admins);
-// Step 2: Print each admin's name with forEach
 function printAdminName(user) {
   console.log("Admin name:", user["name"]);
 }
 admins.forEach(printAdminName);
-// Step 3: Callback function for all users
 function logUser(user) {
   console.log("User: " + user.name);
 }
